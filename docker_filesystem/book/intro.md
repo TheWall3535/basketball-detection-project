@@ -25,7 +25,7 @@ It helps to be explicit about what exists today versus what lies ahead:
 ## How to read this book
 
 - **{doc}`architecture`** — how the code and system are organized: the modular design, the training-versus-serving split, and the two inference surfaces.
-- **The pipeline notebook** — the complete workflow from data loading through training, evaluation, and inference, with the real outputs from the training runs.
+- **{doc}`Training Notebook <basketball_training>`** — the complete workflow from data loading through training and evaluation, with the real outputs from the training runs.
 - **{doc}`reproduce`** — how to install the dependencies and run the pipeline yourself.
 
 ```{note}

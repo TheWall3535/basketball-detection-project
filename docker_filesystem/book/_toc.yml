@@ -14,4 +14,5 @@ root: intro                       # intro.md — the landing / overview page
 chapters:
   - file: architecture            # architecture.md — the code & system design
   - file: basketball_training    # your .ipynb — the pipeline: data -> train -> eval -> infer
+    title: Training Notebook
   - file: reproduce               # reproduce.md — how to run it yourself
