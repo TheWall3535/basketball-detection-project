@@ -26,16 +26,16 @@ execute:
 # ---------------------------------------------------------------------------
 html:
   use_issues_button: false
-  use_repository_button: false     # shows a "source repository" link if repo set below
+  use_repository_button: true     # shows a "source repository" link if repo set below
   home_page_in_navbar: true
 
 # ---------------------------------------------------------------------------
 # Repository (optional) — fill in if you host the code on GitHub, so the book
 # links back to the source. Leave as-is or delete this block if not using.
 # ---------------------------------------------------------------------------
-# repository:
-#   url: "https://github.com/your-username/your-repo"   # <-- edit or remove
-#   branch: "main"
+repository:
+ url: "https://github.com/TheWall3535/basketball-detection-project"   # <-- edit or remove
+ branch: "main"
 
 # ---------------------------------------------------------------------------
 # Parse/rendering extensions — enables nice markdown features (math, etc.)
