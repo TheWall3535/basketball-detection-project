@@ -1,0 +1,25 @@
+# ---- Dataset: large, external, not ours to redistribute ----
+docker_filesystem/roboflow_basketball_detection_data/
+
+# ---- Model checkpoints: large binaries, regenerable by training ----
+*.pt
+*.pth
+*.onnx
+
+# ---- Test data ----
+# Video test data omitted (video files are large). Provide your own clip.
+docker_filesystem/video_test_data/
+# client_test_data: NOT ignored — small images kept for out-of-box demo.
+# (If it's large, add: docker_filesystem/client_test_data/)
+
+# ---- Jupyter Book build output (generated) ----
+docker_filesystem/book/_build/
+
+# ---- Python / Jupyter cruft ----
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# ---- OS cruft ----
+.DS_Store

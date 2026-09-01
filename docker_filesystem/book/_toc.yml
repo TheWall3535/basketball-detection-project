@@ -1,0 +1,17 @@
+# _toc.yml — table of contents (becomes the sidebar navigation)
+# Docs: https://jupyterbook.org/en/stable/structure/toc.html
+#
+# 'format: jb-book' = a linear, book-style read (intro, then chapters in order).
+# 'root' is the landing page. 'chapters' are the ordered pages.
+#
+# Adjust filenames to match what you actually drop in the folder. The notebook
+# entry assumes your training/experiment notebook is named
+# 'basketball_detection.ipynb' — rename here or rename the file to match.
+
+format: jb-book
+root: intro                       # intro.md — the landing / overview page
+
+chapters:
+  - file: architecture            # architecture.md — the code & system design
+  - file: basketball_training    # your .ipynb — the pipeline: data -> train -> eval -> infer
+  - file: reproduce               # reproduce.md — how to run it yourself

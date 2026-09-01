@@ -1,0 +1,47 @@
+# _config.yml — Jupyter Book configuration
+# Docs: https://jupyterbook.org/en/stable/customize/config.html
+
+title: "Automating the Film Bottleneck in Basketball"
+author: "Wally Castelaz"
+logo: ""                      # optional: path to a logo image, e.g. logo.png
+copyright: "2025"
+
+# Only build files listed in the table of contents (avoids accidentally
+# pulling in stray notebooks/checkpoints from the folder).
+only_build_toc_files: true
+
+# ---------------------------------------------------------------------------
+# Notebook execution
+# ---------------------------------------------------------------------------
+# 'off' renders notebooks using the outputs ALREADY SAVED in the .ipynb.
+# This is the safe choice: your notebook's real training/eval outputs (plots,
+# metrics) are displayed as-is, and the build does NOT try to re-run training
+# (which would need the GPU, the dataset, and hours of compute). Keep 'off'
+# unless you specifically want a clean re-execution.
+execute:
+  execute_notebooks: "off"
+
+# ---------------------------------------------------------------------------
+# HTML options
+# ---------------------------------------------------------------------------
+html:
+  use_issues_button: false
+  use_repository_button: false     # shows a "source repository" link if repo set below
+  home_page_in_navbar: true
+
+# ---------------------------------------------------------------------------
+# Repository (optional) — fill in if you host the code on GitHub, so the book
+# links back to the source. Leave as-is or delete this block if not using.
+# ---------------------------------------------------------------------------
+# repository:
+#   url: "https://github.com/your-username/your-repo"   # <-- edit or remove
+#   branch: "main"
+
+# ---------------------------------------------------------------------------
+# Parse/rendering extensions — enables nice markdown features (math, etc.)
+# ---------------------------------------------------------------------------
+parse:
+  myst_enable_extensions:
+    - dollarmath        # $inline$ and $$display$$ math (for the mAP / loss formulas)
+    - colon_fence       # ::: fenced admonitions
+    - deflist

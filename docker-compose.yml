@@ -1,0 +1,19 @@
+services:
+  basketball-detection:
+    build: .
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./docker_filesystem:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+    shm_size: '8gb'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
