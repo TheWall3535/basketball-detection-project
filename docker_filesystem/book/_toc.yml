@@ -3,16 +3,15 @@
 #
 # 'format: jb-book' = a linear, book-style read (intro, then chapters in order).
 # 'root' is the landing page. 'chapters' are the ordered pages.
-#
-# Adjust filenames to match what you actually drop in the folder. The notebook
-# entry assumes your training/experiment notebook is named
-# 'basketball_detection.ipynb' — rename here or rename the file to match.
+# 'title:' overrides a page's nav label (otherwise the page's first heading is
+# used — which is why the notebook needs an explicit title here, or its first
+# markdown header, "Define Class Labels", would become the tab name).
 
 format: jb-book
 root: intro                       # intro.md — the landing / overview page
 
 chapters:
   - file: architecture            # architecture.md — the code & system design
-  - file: basketball_training    # your .ipynb — the pipeline: data -> train -> eval -> infer
+  - file: basketball_training     # the notebook: data -> train -> eval -> infer
     title: Training Notebook
   - file: reproduce               # reproduce.md — how to run it yourself
